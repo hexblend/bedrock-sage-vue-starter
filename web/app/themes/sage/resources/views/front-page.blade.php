@@ -21,6 +21,7 @@
     </div>
 @endif
 
+<!-- Vue Main Component -->
 <hello-world></hello-world>
 
 @endsection
