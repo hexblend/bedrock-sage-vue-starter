@@ -1,4 +1,4 @@
-# Wordpress project starter
+# bedrock-sage-vue-starter
 
 Boilerplate for a modern wordpress theme development environment based on:
 
