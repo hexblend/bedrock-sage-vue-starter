@@ -5,20 +5,3 @@
   </div>
 </template>
 
-<script>
-export default {
-  mounted() {
-    this.helloWorld();
-  },
-  data() {
-    return {
-      //
-    };
-  },
-  methods: {
-    helloWorld() {
-      console.log("Vue up and running!");
-    }
-  }
-};
-</script>
