@@ -19,6 +19,11 @@
       "name": "QWp6t",
       "email": "hi@qwp6t.me",
       "homepage": "https://github.com/qwp6t"
+    },
+    {
+      "name": "Robbin Johansson",
+      "email": "robbinfellow@gmail.com",
+      "homepage": "https://github.com/robbinfellow"
     }
   ],
   "keywords": ["wordpress"],
@@ -34,13 +39,13 @@
   "require": {
     "php": ">=7.1",
     "composer/installers": "~1.0",
-    "illuminate/support": "5.6.*",
-    "roots/sage-lib": "~9.0.5",
-    "soberwp/controller": "~2.1.0"
+    "illuminate/support": "~5.6",
+    "roots/sage-lib": "~9.0.1",
+    "soberwp/controller": "~9.0.0-beta.4"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.8.0",
-    "roots/sage-installer": "~1.4"
+    "roots/sage-installer": "~1.3"
   },
   "scripts": {
     "test": ["phpcs"],
