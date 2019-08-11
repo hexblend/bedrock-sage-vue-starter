@@ -22,6 +22,6 @@
 @endif
 
 <!-- Vue Main Component -->
-<hello-world></hello-world>
+<hello-world class="mt-10"></hello-world>
 
 @endsection
