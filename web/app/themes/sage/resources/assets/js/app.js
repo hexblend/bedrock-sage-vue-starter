@@ -7,8 +7,11 @@ require("./bootstrap")
 // Require Vue
 window.Vue = require("vue")
 
-Vue.component("hello-world", require("./components/HelloWorld.vue"))
+import HelloWorld from "./components/HelloWorld"
 
 const app = new Vue({
-    el: "#app"
+    el: "#app",
+    components: {
+        HelloWorld
+    }
 })
