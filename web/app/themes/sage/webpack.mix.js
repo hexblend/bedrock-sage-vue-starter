@@ -1,5 +1,5 @@
-let mix = require('laravel-mix');
-require('laravel-mix-purgecss');
+let mix = require("laravel-mix")
+require("laravel-mix-purgecss")
 
 /*
  |--------------------------------------------------------------------------
@@ -12,19 +12,19 @@ require('laravel-mix-purgecss');
  |
  */
 
-mix.setPublicPath('dist')
-   .js('resources/assets/js/app.js', 'js/')
-   .extract([
-     'babel-polyfill',
-     'vue'
-   ])
-   .sass('resources/assets/sass/app.scss', 'css/')
-   .options({
-     processCssUrls: false,
-     postCss: [ require('tailwindcss')('./tailwind.js') ],
-   })
-   .purgeCss()
+mix.setPublicPath("dist")
+    .js("resources/assets/js/app.js", "js/")
+    .extract(["babel-polyfill", "vue"])
+    .sass("resources/assets/sass/app.scss", "css/")
+    .options({
+        processCssUrls: false,
+        postCss: [require("tailwindcss")("./tailwind.js")]
+    })
+    .purgeCss()
+    .copy("resources/assets/img", "dist/img/")
+
+mix.browserSync("http://local.bedrock-sage-vue-starter")
 
 if (mix.inProduction()) {
-  mix.version()
+    mix.version()
 }
