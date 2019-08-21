@@ -22,26 +22,31 @@ Sage theme setup by [robbinworks](https://github.com/robbinworks/sage). Go and s
     ```
 3. Update environment variables in the `.env` file:
 
--   Database variables
-    -   `DB_NAME` - Database name
-    -   `DB_USER` - Database user
-    -   `DB_PASSWORD` - Database password
-    -   `DB_HOST` - Database host
-    -   Optionally, you can define `DATABASE_URL` for using a DSN instead of using the variables above (e.g. `mysql://user:password@127.0.0.1:3306/db_name`)
--   `WP_ENV` - Set to environment (`development`, `staging`, `production`)
--   `WP_HOME` - Full URL to WordPress home (https://example.com)
--   `WP_SITEURL` - Full URL to WordPress including subdirectory (https://example.com/wp)
--   `AUTH_KEY`, `SECURE_AUTH_KEY`, `LOGGED_IN_KEY`, `NONCE_KEY`, `AUTH_SALT`, `SECURE_AUTH_SALT`, `LOGGED_IN_SALT`, `NONCE_SALT`
-    -   Generate with [wp-cli-dotenv-command](https://github.com/aaemnnosttv/wp-cli-dotenv-command)
-    -   Generate with [our WordPress salts generator](https://roots.io/salts.html)
+    -   Database variables
+        -   `DB_NAME` - Database name
+        -   `DB_USER` - Database user
+        -   `DB_PASSWORD` - Database password
+        -   `DB_HOST` - Database host
+        -   Optionally, you can define `DATABASE_URL` for using a DSN instead of using the variables above (e.g. `mysql://user:password@127.0.0.1:3306/db_name`)
+    -   `WP_ENV` - Set to environment (`development`, `staging`, `production`)
+    -   `WP_HOME` - Full URL to WordPress home (https://example.com)
+    -   `WP_SITEURL` - Full URL to WordPress including subdirectory (https://example.com/wp)
+    -   `AUTH_KEY`, `SECURE_AUTH_KEY`, `LOGGED_IN_KEY`, `NONCE_KEY`, `AUTH_SALT`, `SECURE_AUTH_SALT`, `LOGGED_IN_SALT`, `NONCE_SALT`
+        -   Generate with [wp-cli-dotenv-command](https://github.com/aaemnnosttv/wp-cli-dotenv-command)
+        -   Generate with [our WordPress salts generator](https://roots.io/salts.html)
 
 4. Go to your theme's folder (i.e. `web/app/themes/sage`) and run:
 
-```
-$ composer install
-$ yarn
-```
-
+    ```
+    $ composer install
+    $ yarn
+    ```
+    
+    In case of engine incompatibilites when running the node packgage, run:
+    ``` 
+    yarn config set ignore-engines true
+   ``` 
+  
 5. Set the document root on your webserver to Bedrock's `web` folder: `/path/to/site/web/`
 
 6. Access WordPress admin at `https://example.com/wp/wp-admin/`
