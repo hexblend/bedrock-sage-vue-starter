@@ -8,7 +8,7 @@ Boilerplate for a modern wordpress theme development environment based on:
 -   [Tailwinds CSS](https://tailwindcss.com/)
 -   [Laravel Mix](https://laravel-mix.com/)
 
-Sage theme setup by [robbinworks](https://github.com/robbinworks/sage). Go and show him some love 🌟
+Sage theme setup by [robbinworks](https://github.com/robbinworks/). Go and show him some love 🌟
 
 ## Installation
 
